@@ -1,0 +1,476 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .side_nav_active .side_nav {
+        max-width: 310px;
+    }
+    .container {
+        max-width: 94%;
+    }
+    
+    .side_nav_active main.with_nav {
+        width: calc(100% - 310px);
+    }
+    .chat_text_blk {
+        max-width: 70%;
+    }
+    
+    .chat_text_blk p {
+        font-size: 15px;
+    }
+    section.artists-Area .col-xl-2 {
+        width: 25%;
+    }
+    .artists_blk {
+        max-width: 100%;
+    }
+    .Checkout_wrp {
+        margin: auto;
+    }
+    
+    .Tour_content {
+        margin: auto;
+        margin-left: 140px;
+    }
+    section.Events_v2-Area .col-xl-2 {
+        width: 25%;
+    }
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+    .side_nav {
+        position: absolute;
+        left: -180px;
+    }
+
+.side_nav.active {
+    left: 0;
+    z-index: 99;
+}
+
+.side_nav a.m_nav_btn {
+    display: block;
+}
+    .side_nav_active main.with_nav {
+        width: calc(100% - 0px);
+    }
+    .container {
+        max-width: 98%;
+    }
+    main.with_nav {
+        width: calc(100% - 0px);
+        transition: all .3s ease-in-out;
+    }
+    .header_left a.m_nav_btn{
+    display: inline-block !important;
+}
+.chat_text_blk {
+    max-width: 70%;
+}
+
+.chat_text_blk p {
+    font-size: 15px;
+}
+.header_left.Interdum{width: 65%;}
+.Events_header_btn {
+    padding-bottom: 0;
+}
+.artists_blk {
+    max-width: 260px;
+}
+.Checkout_wrp {
+    margin: auto;
+    max-width: 375px;
+}
+
+.Tour_content {
+    margin: auto;
+}
+.Checkout-Area:before {
+    width: 50%;
+}
+
+.input-two input {
+    width: 100%;
+}
+
+.input-two {
+    display: block;
+}
+.Billing_txt {
+    flex-direction: column;
+}
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .side_nav {
+        position: absolute;
+        left: -180px;
+    }
+
+.side_nav.active {
+    left: 0;
+    z-index: 99;
+}
+
+.side_nav a.m_nav_btn {
+    display: block;
+}
+    .side_nav_active main.with_nav {
+        width: calc(100% - 0px);
+    }
+    .container {
+        max-width: 98%;
+    }
+    main.with_nav {
+        width: calc(100% - 0px);
+        transition: all .3s ease-in-out;
+    }
+    .header_left a.m_nav_btn{
+    display: inline-block !important;
+    width: 20px;
+}
+.Schedule_blk{
+    padding: 17px 20px;
+}
+.Event_btn_arrow {
+    margin-left: 15px;
+}
+.chatting_header .header_left {
+    padding: 20px 30px 20px;
+}
+
+.chatting_header .ch_right {
+    padding: 20px 30px 20px;
+}
+
+.ch_left {
+    padding: 0 30px;
+}
+
+.ch_right {
+    padding: 0 30px;
+}
+
+.chat_text_blk p {
+    font-size: 14px;
+}
+
+.chat_text_blk {
+    padding: 10px 20px;
+    max-width: 300px;
+}
+
+.chat_text_blk.me {
+    margin-left: auto;
+}
+
+.ch_left {
+    max-width: 320px;
+}
+
+h2.title {
+    font-size: 24px;
+}
+
+.chat_text {border: none;}
+
+.chat_action a:nth-child(2) {
+    display: none;
+}
+
+.chat_action {
+    bottom: 10px;
+    left: 42px;
+    padding-right: 80px;
+}
+
+.prom_date {
+    margin: 20px auto;
+}
+.header_left.Interdum {width: 70%;}
+.Events_header_btn {
+    padding-bottom: 0;
+}
+.Events_left {
+    margin: auto;
+}
+
+.Events_right {
+    max-width: 550px;
+    margin: auto;
+    margin-top: 50px;
+}
+.Checkout-Area:before {
+    width: 50%;
+    background: no-repeat;
+}
+
+.input-two input {
+    width: 100%;
+}
+
+.input-two {
+    display: block;
+}
+.Checkout_wrp {
+    margin: auto;
+    max-width: 400px;
+}
+
+.Tour_content {
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.Checkout-Area .row {
+    flex-direction: column-reverse;
+}
+.Billing_txt {
+    flex-direction: column;
+}
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .side_nav {
+        position: absolute;
+        left: -180px;
+    }
+
+.side_nav a.m_nav_btn {display: block;}
+
+.side_nav.active {
+    left: 0;
+    z-index: 99;
+}
+    .side_nav_active main.with_nav {
+        width: calc(100% - 0px);
+    }
+    .container {
+        max-width: 98%;
+    }
+    main.with_nav {
+        width: calc(100% - 0px);
+        transition: all .3s ease-in-out;
+    }
+    .header_left a.m_nav_btn{display: inline-block !important;}
+.Schedule_header .header_wrp {
+    flex-direction: column;
+}
+
+.Schedule_header .header_left {
+    width: 100%;
+}
+
+.Schedule_header .header_right {
+    width: 100%;
+}
+
+.sh_month {max-width: max-content;}
+
+.sh_month_arrow a {
+    margin-left: 10px;
+}
+
+.Schedule_header_right {
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.Schedule_blk ul {
+    flex-direction: column;
+    align-items: baseline;
+}
+
+.Schedule_blk ul li {
+    margin: 10px 0;
+    width: 100%;
+}
+
+.Event_btn_wrp {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.chatting_header .header_left {
+    padding: 20px 30px 20px;
+}
+
+.chatting_header .ch_right {
+    padding: 20px 30px 20px;
+    display: none;
+}
+
+.ch_left {
+    padding: 0 30px;
+}
+
+.ch_right {
+    padding: 0 30px;
+}
+
+.chat_text_blk p {
+    font-size: 14px;
+}
+
+.chat_text_blk {
+    padding: 10px 20px;
+    max-width: 300px;
+}
+
+.chat_text_blk.me {
+    margin-left: auto;
+}
+
+.ch_left {
+    max-width: 100%;
+}
+
+.Messaging_wrp {margin: auto;}
+
+
+h2.title {
+    font-size: 24px;
+}
+
+.chat_text {border: none;}
+
+.chat_action a:nth-child(2) {
+    display: none;
+}
+
+.chat_action {
+    bottom: 10px;
+    left: 42px;
+    padding-right: 80px;
+}
+
+.prom_date {
+    margin: 20px auto;
+}
+.Promoter_name {
+    display: none;
+}
+
+.Events_left {
+    margin: auto;
+    max-width: 400px;
+}
+
+.Events_right {
+    max-width: 400px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.hi_3 {
+    flex-direction: column;
+}
+
+.Interdum {
+    width: 100%;
+}
+
+.hi_3 .header_right {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.Events_header_btn {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.Events_header_btn a {
+    padding: 10px 20px;
+}
+
+.open_app a {
+    padding: 14px;
+}
+
+.open_app input {
+    padding: 14px;
+}
+
+.Approved_blk ul {
+    width: 660px;
+}
+
+.modal_header h4 {
+    font-size: 18px;
+}
+
+.ev_calender_blk p {
+    font-size: 14px;
+}
+
+.ev_calender_blk p i {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.ev_calender ul {
+}
+
+.ev_calender > a {
+    padding: 14px;
+}
+
+.evn_loc p {
+    font-size: 15px;
+}
+.artists_blk {
+    margin: 10px auto;
+} 
+.Checkout-Area:before {
+    width: 50%;
+    background: no-repeat;
+}
+
+.input-two input {
+    width: 100%;
+}
+
+.input-two {
+    display: block;
+}
+.Checkout_wrp {
+    margin: auto;
+}
+
+.Tour_content {
+    margin: auto;
+    margin-bottom: 60px;
+}
+
+.Billing_txt {
+    flex-direction: column;
+}
+
+.Checkout-Area .row {
+    flex-direction: column-reverse;
+}
+.Events_v2_blk {
+    margin-inline: auto;
+}
+
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.Events_v2-text h5{font-size: 15px;}
+}
