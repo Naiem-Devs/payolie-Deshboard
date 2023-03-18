@@ -157,7 +157,7 @@ li {
 }
 
 
-.side_nav ul li ul.sub_nav {padding-left: 30px;border-left: 0.5px solid rgba(166, 166, 173, 0.3);margin-left: 50px;position: absolute;opacity: 0;width: 200px;transition: .3s;}
+.side_nav ul li ul.sub_nav {padding-left: 30px;border-left: 0.5px solid rgba(166, 166, 173, 0.3);margin-left: 50px;position: absolute;opacity: 0;width: 200px;transition: .3s;margin-top: 10px;}
 
 .side_nav_active .side_nav ul li ul.sub_nav {
     position: unset;
@@ -258,7 +258,7 @@ img.logo_img {
   width: 100%;
 }
 
-.down_nav {position: relative;padding-top: 20px;position: absolute;max-width: 90%;top: 80%;width: 100%;}
+.down_nav {position: relative;padding-top: 20px;position: absolute;max-width: 90%;top: 80%;width: 100%;background: #fff;}
 
 .down_nav:after {
     content: "'";

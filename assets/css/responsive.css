@@ -1,8 +1,20 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+    .side_nav_active .logo i {
+        margin-left: 85px;
+    }
     .side_nav_active .side_nav {
         max-width: 310px;
     }
+    body.side_nav_active .index-4_nav{}
+
+body.side_nav_active .index-4_nav nav {
+    /* height: 360px; */
+    /* overflow: auto; */
+}
+.Events_header_btn{
+    padding-bottom: 0;
+}
     .container {
         max-width: 94%;
     }
@@ -40,9 +52,10 @@
 
 /* Normal screen :992px. */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .side_nav_active .logo i {
+        margin-left: 100px;
+    }
     .side_nav {
-        position: absolute;
         left: -180px;
     }
 
@@ -110,7 +123,6 @@
 /* Tablet screen :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
     .side_nav {
-        position: absolute;
         left: -180px;
     }
 
@@ -121,6 +133,10 @@
 
 .side_nav a.m_nav_btn {
     display: block;
+}
+
+.side_nav_active .logo i {
+    margin-left: 100px;
 }
     .side_nav_active main.with_nav {
         width: calc(100% - 0px);
@@ -241,15 +257,26 @@ h2.title {
 /* small screen :320px. */
 @media (max-width: 767px) {
     .side_nav {
-        position: absolute;
         left: -180px;
     }
+
+.chatting_header {
+    border-bottom: 1px solid #DFE1E6;
+}
+
+.header_wrp.chatting_header .bdr_btm:after {
+    display: none;
+}
 
 .side_nav a.m_nav_btn {display: block;}
 
 .side_nav.active {
     left: 0;
     z-index: 99;
+}
+
+.side_nav_active .logo i {
+    margin-left: 100px;
 }
     .side_nav_active main.with_nav {
         width: calc(100% - 0px);
@@ -327,11 +354,13 @@ h2.title {
 
 .chat_text_blk {
     padding: 10px 20px;
-    max-width: 300px;
+    max-width: 280px;
+    margin-left: 0;
 }
 
 .chat_text_blk.me {
     margin-left: auto;
+    margin-right: 0;
 }
 
 .ch_left {
@@ -340,21 +369,35 @@ h2.title {
 
 .Messaging_wrp {margin: auto;}
 
+.Messaging_wrp.hide {
+    display: none;
+}
+
 
 h2.title {
     font-size: 24px;
 }
 
-.chat_text {border: none;}
+.chat_text {border: none;padding-top: 0px;height: 100%;padding-bottom: 160px;}
+
+.chat_action a {
+    width: 50px;
+    height: 50px;
+}
 
 .chat_action a:nth-child(2) {
     display: none;
 }
 
 .chat_action {
-    bottom: 10px;
-    left: 42px;
-    padding-right: 80px;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    padding-top: 10px;
+}
+
+.chat_action > input {
+    height: 50px;
 }
 
 .prom_date {
@@ -362,6 +405,11 @@ h2.title {
 }
 .Promoter_name {
     display: none;
+}
+
+.Promoter_name.show {
+    display: block;
+    padding: 0 20px;
 }
 
 .Events_left {
