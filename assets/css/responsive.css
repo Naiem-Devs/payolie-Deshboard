@@ -1,5 +1,8 @@
 /* Big screen :1200px. */
 @media (min-width: 1200px) and (max-width: 1500px) {
+    .chat_text {
+        height: 60vh;
+    }
     .side_nav_active .logo i {
         margin-left: 85px;
     }
@@ -378,6 +381,10 @@ h2.title {
     font-size: 24px;
 }
 
+h2.title.title-v3 {
+    padding-top: 20px;
+}
+
 .chat_text {border: none;padding-top: 0px;height: 100%;padding-bottom: 160px;}
 
 .chat_action a {
@@ -423,8 +430,13 @@ h2.title {
     margin-top: 20px;
 }
 
-.hi_3 {
+.header_wrp.hi_3 {
     flex-direction: column;
+    padding: 15px 0 20px;
+}
+
+.header_left {
+    width: 100%;
 }
 
 .Interdum {

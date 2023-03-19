@@ -314,6 +314,11 @@ a.Logout {
 .header_content {border-bottom: 1px solid #DFE1E6;}
 .header_wrp {display: flex;justify-content: space-between;align-items: center;padding: 40px 0 20px;}
 
+.header_wrp.hi_3 {
+    padding-bottom: 20px;
+    padding: 50px 0 30px;
+}
+
 .chatting_header {
     padding: 0;
 }
@@ -370,6 +375,14 @@ h2.title {
     margin-bottom: 0;
     display: block;
     font-family: 'Play', sans-serif;
+}
+
+h2.title-v3 {display: flex;align-items: baseline;}
+
+h2.title-v3 i {
+    display: inline-block;
+    transform: translateY(-3px);
+    margin-right: 10px;
 }
 .header_right {width: 50%;margin-left: auto;}
 .Schedule_header_right {display: flex;align-items: center;justify-content: end;}
@@ -626,7 +639,7 @@ span.side_bdr {
 .Promoter_name {width: 100%;height: 88vh;position: relative;margin-left: auto;overflow: hidden;}
 .ch_right {padding: 0 60px;}
 .prom_date {text-align: center;display: block;color: #A6A6AD;padding: 6px 22px;background: #fff;width: max-content;margin-inline: auto;border: 0.3px solid rgba(166, 166, 173, 0.2);border-radius: 4px;margin: 30px auto;}
-.chat_text {display: flex;flex-direction: column;padding: 40px 0 20px;height: 615px;overflow: auto;overflow-x: hidden;/* border-bottom: 0.5px solid rgba(166, 166, 173, 0.1); */padding-bottom: 60px;border-bottom: 0.5px solid rgba(166, 166, 173, 0.3);}
+.chat_text {display: flex;flex-direction: column;padding: 40px 0 20px;height: 615px;overflow: auto;overflow-x: hidden;/* border-bottom: 0.5px solid rgba(166, 166, 173, 0.1); *//* padding-bottom: 60px; */border-bottom: 0.5px solid rgba(166, 166, 173, 0.3);height: 67vh;}
 .chat_text_blk {border-radius: 10px 10px 0px 10px;padding: 16px 30px;max-width: 65%;background: #FFFFFF;border: 0.3px solid rgba(166, 166, 173, 0.2);margin: 15px;position: relative;max-width: 700px;}
 .chat_text_blk p {
     margin-bottom: 0;
@@ -637,7 +650,7 @@ span.side_bdr {
     left: -52px;
 }
 .ct_time {bottom: 0;position: absolute;right: -50px;color: rgba(166, 166, 173, 0.7);font-size: 12px;}
-.chat_action {width: 100%;display: flex;align-items: center;justify-content: space-between;bottom: 25px;left: 60px;position: absolute;padding-right: 120px;background: #f7fafe;padding-top: 10px;}
+.chat_action {width: 100%;display: flex;align-items: center;justify-content: space-between;left: 60px;position: absolute;padding-right: 120px;background: #f7fafe;padding-top: 10px;bottom: 0;padding-bottom: 20px;}
 
 .chat_action a {
     flex-shrink: 0;
@@ -682,7 +695,7 @@ span.side_bdr {
 
 
 /*============Events Area Start =============*/
-.Events_header_btn {text-align: right;padding: 0px 0 20px;}
+.Events_header_btn {text-align: right;}
 
 .Events_header_btn a {
     padding: 14px 22px;
@@ -698,7 +711,7 @@ span.side_bdr {
 .Events_left {width: 100%;max-width: 550px;}
 
 .Events_left ul li {
-    border-bottom: 0.3px solid rgb(166 166 173 / 30%);
+    /* border-bottom: 0.3px solid rgb(166 166 173 / 30%); */
     margin-bottom: 13px;
 }
 
@@ -783,7 +796,51 @@ i.dot {
     color: var(--thmColor);
     margin-right: 13px;
 }
-.ev_calender {margin-bottom: 1rem;}
+.ev_calender {margin-bottom: 1rem;background: #ffff;overflow: hidden;border-radius: 5px;}
+
+.ev_calender_nik {
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: absolute;
+    width: 100%;
+    display: none;
+    padding-right: 20px;
+    bottom: 30px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+    z-index: -50;
+}
+
+li.active .ev_calender_nik {
+    opacity: 1;
+    bottom: 10px;
+    z-index: 1;
+    display: flex;
+    width: 100%;
+    max-width: 305px;
+    border-radius: 5px;
+}
+
+.ev_calender_nik span {
+    color: #1C1C26;
+}
+
+.ev_calender_nik a {}
+
+.ev_calender_nik > i {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    flex-shrink: 0;
+    border-top-left-radius: 7px;
+    overflow: hidden;
+    border-bottom-left-radius: 7px;
+}
+
+.ev_calender_nik i img {
+    max-width: 100%;
+}
 
 .ev_calender > a {
     display: block;
@@ -795,10 +852,10 @@ i.dot {
 }
 
 .ev_calender ul {
-    padding: 20px 30px;
-    background: #fff;
+    /* padding: 20px 30px 0; */
     padding-left: 70px;
     position: relative;
+    margin-bottom: 0;
 }
 
 .ev_calender ul li {
@@ -806,10 +863,36 @@ i.dot {
     justify-content: space-between;
     color: #686873;
     align-items: center;
-    padding-bottom: 13px;
-    margin-bottom: 13px;
+    padding:  14px 20px;
     position: relative;
     border-bottom: 0.3px solid rgb(166 166 173 / 30%);
+    z-index: 99;
+    padding-left: 0;
+}
+
+.ev_calender ul li:after {
+    content: "";
+    position: absolute;
+    width: 2px;
+    background: #413CB9;
+    top: 20px;
+    left: -33px;
+    z-index: -4;
+    height: 100%;
+}
+
+.ev_calender ul li:last-child:after {
+    display: none;
+}
+
+.ev_calender ul li.active {
+    padding-bottom: 80px !important;
+}
+
+.ev_calender ul li span {
+    position: relative;
+    display: inline-block;
+    z-index: 22;
 }
 
 
@@ -817,20 +900,55 @@ i.dot {
     width: 4px;
     height: 4px;
     margin: 0;
+    position: relative;
+    z-index: 3;
 }
 
 .ev_calender ul:after {
     content: "";
     position: absolute;
     width: 2px;
-    height: 150px;
-    background: #413CB9;
+    /* background: #413CB9; */
     top: 30px;
     left: 37px;
     z-index: 0;
+    height: 100%;
 }
 
-.ev_calender ul li:after {
+.ev_calender ul li:before {
+    content: "";
+    position: absolute;
+    background: var(--thmColor);
+    width: 137%;
+    height: 100%;
+    left: -73px;
+    opacity: 0;
+    z-index: -1;
+    top: 0;
+}
+
+.ev_calender ul li.active:before {
+    opacity: 0.02;
+}
+
+.ev_calender ul li:last-child {
+    border: none;
+}
+
+.ev_calender ul li:last-child p:after {}
+
+.ev_calender ul li:last-child:before {
+}
+
+.ev_calender ul li p {
+    margin-bottom: 0;
+    font-weight: 500;
+    color: var(--thmColor);
+    position: relative;
+    z-index: 1;
+}
+
+.ev_calender ul li p:after {
     content: "";
     position: absolute;
     width: 15px;
@@ -840,20 +958,11 @@ i.dot {
     left: -40px;
     z-index: 1;
     background: #fff;
+    top: 5px;
 }
 
-.ev_calender ul li:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border: none;
-}
-
-.ev_calender ul li p {
-    margin-bottom: 0;
-    font-weight: 500;
-    color: var(--thmColor);
-}
-.ad {transition: .3s;}
+.ev_calender ul li p:after {}
+.ad {transition: .3s;position: relative;z-index: 99;}
 
 .ad:hover {
     color: var(--thmColor);
@@ -1086,7 +1195,7 @@ i.dot {
     z-index: -1;
     height: 100%;
 }
-.Checkout_wrp {max-width: 460px;}
+.Checkout_wrp {max-width: 460px;padding-left: 8px;}
 
 .Checkout_Billing {
     max-width: 580px;
