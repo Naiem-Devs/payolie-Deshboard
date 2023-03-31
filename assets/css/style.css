@@ -122,13 +122,13 @@ li {
 
 
 /*============ Area Start =============*/
-.side_nav {max-width: 150px;display: inline-block;background: #FFFFFF;min-height: 100vh;position: fixed;width: 100%;transition: all .3s ease-in-out;overflow: hidden;height: 100%;}
+.side_nav {max-width: 150px;display: inline-block;background: #FFFFFF;min-height: 100vh;position: fixed;width: 100%;transition: all .3s ease-in-out;overflow: hidden;height: 100%;z-index: 9999;}
 
 .side_nav a.m_nav_btn {
     display: none;
     position: absolute;
     right: 11px;
-    z-index: 99;
+    z-index: 102;
     top: 15px;
     font-size: 25px;
     color: var(--thmColor);
@@ -148,9 +148,10 @@ li {
 
 .side_nav_active .side_nav {
   max-width: 350px;
+  box-shadow: 30px 0 40px rgb(0 0 0 / 15%);
 }
 .side_nav_active main.with_nav{
-  width: calc(100% - 350px);
+  /* width: calc(100% - 350px); */
 }
 .side_nav ul {
     padding-left: 45px;
@@ -204,7 +205,7 @@ li {
 }
 
 .side_nav nav ul li a:hover i {
-    background: rgba(65, 60, 185, 0.05);
+    /* background: rgba(65, 60, 185, 0.05); */
 }
 
 .side_nav ul li a:hover i svg path {
@@ -247,6 +248,7 @@ li {
     margin-bottom: 25px;
     display: flex;
     align-items: center;
+    z-index: 99;
 }
 
 
@@ -261,7 +263,7 @@ img.logo_img {
 .down_nav {position: relative;padding-top: 20px;position: absolute;max-width: 90%;top: 80%;width: 100%;background: #fff;}
 
 .down_nav:after {
-    content: "'";
+    content: "";
     position: absolute;
     width: 75%;
     height: 1px;
@@ -345,6 +347,7 @@ a.Logout {
     color: var(--thmColor);
     font-size: 30px;
     margin-right: 20px;
+    width: 30px;
 }
 
 .m_nav_btn i.fal.fa-times {
@@ -528,6 +531,10 @@ h2.title-v3 i {
 .chatting_header_lf a {
     background: no-repeat;
     border: none;
+}
+
+a.BackBtn {
+    display: none;
 }
 
 .header_left.ch_left.bdr_btm:after {
@@ -856,6 +863,7 @@ li.active .ev_calender_nik {
     padding-left: 70px;
     position: relative;
     margin-bottom: 0;
+    z-index: 5;
 }
 
 .ev_calender ul li {
@@ -887,6 +895,10 @@ li.active .ev_calender_nik {
 
 .ev_calender ul li.active {
     padding-bottom: 80px !important;
+}
+
+.ev_calender ul li.active > .ad > i {
+    rotate: 180deg;
 }
 
 .ev_calender ul li span {
@@ -1025,6 +1037,8 @@ li.active .ev_calender_nik {
     margin-bottom: 0;
     color: #A6A6AD;
 }
+
+p {}
 
 .Approved_blk ul h6 {
     margin-bottom: 0;

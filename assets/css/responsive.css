@@ -23,7 +23,7 @@ body.side_nav_active .index-4_nav nav {
     }
     
     .side_nav_active main.with_nav {
-        width: calc(100% - 310px);
+        /* width: calc(100% - 310px); */
     }
     .chat_text_blk {
         max-width: 70%;
@@ -71,7 +71,7 @@ body.side_nav_active .index-4_nav nav {
     display: block;
 }
     .side_nav_active main.with_nav {
-        width: calc(100% - 0px);
+        /* width: calc(100% - 0px); */
     }
     .container {
         max-width: 98%;
@@ -263,8 +263,29 @@ h2.title {
         left: -180px;
     }
 
+.header.backIcon a.m_nav_btn {
+}
+
 .chatting_header {
     border-bottom: 1px solid #DFE1E6;
+}
+
+.BackBtn i.far.fa-bars {
+    display: none;
+}
+
+a.BackBtn {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-left: -10px;
+}
+
+.chatting_header a:hover {
+    background: unset;
+    color: var(--thmColor);
 }
 
 .header_wrp.chatting_header .bdr_btm:after {
@@ -292,6 +313,10 @@ h2.title {
         transition: all .3s ease-in-out;
     }
     .header_left a.m_nav_btn{display: inline-block !important;}
+
+.chatting_header_lf a.m_nav_btn.d-xl-none.d-none {
+    display: none !important;
+}
 .Schedule_header .header_wrp {
     flex-direction: column;
 }
@@ -379,10 +404,11 @@ h2.title {
 
 h2.title {
     font-size: 24px;
+    align-items: center;
 }
 
 h2.title.title-v3 {
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .chat_text {border: none;padding-top: 0px;height: 100%;padding-bottom: 160px;}
@@ -435,6 +461,11 @@ h2.title.title-v3 {
     padding: 15px 0 20px;
 }
 
+.header_wrp.hi_3.hed_4 {
+    flex-direction: unset;
+    align-items: center;
+}
+
 .header_left {
     width: 100%;
 }
@@ -453,6 +484,9 @@ h2.title.title-v3 {
     text-align: center;
 }
 
+.hed_4 .Events_header_btn {
+}
+
 .Events_header_btn a {
     padding: 10px 20px;
 }
@@ -466,7 +500,6 @@ h2.title.title-v3 {
 }
 
 .Approved_blk ul {
-    width: 660px;
 }
 
 .modal_header h4 {
@@ -525,6 +558,30 @@ h2.title.title-v3 {
 }
 .Events_v2_blk {
     margin-inline: auto;
+}
+.Approved_blk ul h6 {
+    display: none;
+}
+
+.Approved_blk ul li p {
+    display: none;
+}
+
+.approv_btn a {
+    font-size: 14px;
+    padding: 10px 16px;
+}
+
+.Approved_blk {
+    padding-left: 0;
+}
+
+.Approved_modal_wrp {
+    padding-bottom: 20px;
+}
+
+.approv_btn a.star {
+    height: 38px;
 }
 
 }

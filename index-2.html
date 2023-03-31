@@ -112,6 +112,8 @@
                         <a href="#" class="m_nav_btn d-block d-xl-none">
                             <i class="far fa-bars"></i>
                         </a>
+                        <a href="#" class="d-none BackBtn">
+                            <i class="far fa-chevron-left"></i></a>
                         <h2 class="title">Messaging</h2>
                     </div>
                     <a href="#"><i class="far fa-search"></i></a>
@@ -437,6 +439,15 @@
             $(".Messaging_blk").click(function() {
                 $(".Messaging_wrp").addClass("hide")
                 $(".Promoter_name").addClass("show")
+                $(".chatting_header_lf a").addClass("d-none")
+                $(".BackBtn").removeClass("d-none")
+            })
+            $(".BackBtn").click(function() {
+                $(".Messaging_wrp").removeClass("hide")
+                $(".Messaging_wrp").removeClass("hide")
+                $(".Promoter_name").removeClass("show")
+                $(this).addClass("d-none")
+                $(".chatting_header_lf a.m_nav_btn ").removeClass("d-none")
             })
         </script>
         
