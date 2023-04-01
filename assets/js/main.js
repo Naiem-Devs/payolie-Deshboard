@@ -16,4 +16,28 @@ $("a.m_nav_btn").click(function (){
 })
 
   $('select').niceSelect();
+
+
+  function LessMoreBtns() {
+    let Elements = document.querySelectorAll('.truncates')
+    if (Elements.length > 0) { 
+      Elements.forEach(el => {
+          let btn = el.querySelector('button')
+          btn.addEventListener('click', () => {
+              el.classList.toggle('make_it_big')
+          })
+      })
+    }
+  }
+  LessMoreBtns()
+
+
+
+
+
+
+
+
+
+
 })(jQuery);
